@@ -40,7 +40,7 @@ This is a simple program to show a cos signal being generated using a signal sou
 <br>
 
 
-# WEEK 2:
+## WEEK 2:
 
 </details>
 <details>
