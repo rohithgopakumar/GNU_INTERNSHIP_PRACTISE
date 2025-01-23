@@ -10,7 +10,7 @@
 We go with digital communication as it is is more reliable than analog communiation. when we have noise in the system it is easier to decode a bit 0 or 1 rather than decode the whole spectrum of signals that are present while having a signal. It is similar to how analog signal will have all the details of a painting and when scaled down becomes harder to understand whereas digital comms is just distinguishing between black and white. 
 
 
-# COURSE CONTENT
+# WEEK 1:
 
 </details>
 <details>
