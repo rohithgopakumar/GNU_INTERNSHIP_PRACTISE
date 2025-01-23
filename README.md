@@ -33,6 +33,7 @@ This is a simple program to show a cos signal being generated using a signal sou
 <details>
 <summary>EXPERIMENT 2: Low Pass Filter </summary>
 <br>
+
 ![image](https://github.com/user-attachments/assets/8f56cc16-7a2d-4c59-997d-012c2016b5fe)
 A low pas filter with a cutt off freq of 4500 and a Transition Width of 1000 is being used, so any frequency below 4500 will be passed and anything above will start to diminish, we can see this behaviour by looking at the time and frequency plot below.
 
