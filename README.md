@@ -3,12 +3,11 @@
 
 ## Introduction
 
-This is the tutorial to setup the Zedboard in a linux system using Matlab Simulink and complete the first Blinking Led Example. I have made a detailed step by step tutorial which will help you setup the Zedboard with ease.
 
 
+![image](https://github.com/user-attachments/assets/777310eb-111c-4df1-96bf-cdaeba72e1ad)
 
-![zedboard_looks](https://github.com/rohithgopakumar/ZEDBOARD_Hardware_Setup_Linux_Matlab/assets/131611312/a4414c36-60f6-47cc-82b0-c588d909b697)
-
+We go with digital communication as it is is more reliable than analog communiation. when we have noise in the system it is easier to decode a bit 0 or 1 rather than decode the whole spectrum of signals that are present while having a signal. It is similar to how analog signal will have all the details of a painting and when scaled down becomes harder to understand whereas digital comms is just distinguishing between black and white. 
 
 
 # COURSE CONTENT
