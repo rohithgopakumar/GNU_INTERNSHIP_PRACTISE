@@ -14,42 +14,24 @@ We go with digital communication as it is is more reliable than analog communiat
 
 </details>
 <details>
-<summary>STEP 1: Prerequisites </summary>
+<summary>EXPERIMENT 1: A simple program  </summary>
 <br>
 
 
-Before using this code example, make sure you have the following prerequisites:
+![image](https://github.com/user-attachments/assets/8fc42e1b-b51e-4741-aaf5-1b972c0c111e)
 
-- Matlab version:R2022b
-- OS:Ubuntu 20.04.3 LTS
-- Simulink
-- HDL Coder
-- Embedded Coder
-- HDL Coder Support Package for Xilinx Zynq Platform (currently used version-22.2.0)
-- Fixed-Point Designer
-- Signal Processing Toolbox
-- MATLAB Coder
-- Simulink Coder
-- Xilinx Vivado 2020.2
-
-![packages req](https://github.com/rohithgopakumar/ZEDBOARD_Hardware_Setup_Linux_Matlab/assets/131611312/52d3238f-d6bc-4abd-8744-1f2c57bf5433)
-
-Ensure all the MATLAB packages are installed before proceeding with this example. In case you are new to matlab, use the images below as reference to download the packages:
+We need sampling as real signals are continous and have value for all infinite time intervals and its not possible for computers to compute all the intervals of time that is needed, so we follow nyquist sample theorem to ensure that there are enough samples to recreate the signals using a dac ( fs >= 2*fm ). 
 
 
-![image](https://github.com/rohithgopakumar/ZEDBOARD_Hardware_Setup_Linux_Matlab/assets/131611312/29f7917c-8235-44a6-ac13-5b76c759fa49)
+![image](https://github.com/user-attachments/assets/104a363c-e21f-4c2a-a965-02426b223030)
 
-![image](https://github.com/rohithgopakumar/ZEDBOARD_Hardware_Setup_Linux_Matlab/assets/131611312/fa873711-845e-4e2c-b649-27fb1810cd35)
+This is a simple program to show a cos signal being generated using a signal source and being captured using a time sink. we can see that the signal is being sampled at 32k which means that at every 1/32k time interval we take a sample which is shown below
 
-![image](https://github.com/rohithgopakumar/ZEDBOARD_Hardware_Setup_Linux_Matlab/assets/131611312/ac492b86-ffa7-4675-9672-cd137aeb0751)
-
-
-Use the search bar in order to download the required packages.
-
+![image](https://github.com/user-attachments/assets/20337750-dd38-4ead-9f7f-6ad589741ba3)
 
 </details>
 <details>
-<summary>STEP 2: Vivado 2020.2 install for Linux </summary>
+<summary>EXPERIMENT 2:  </summary>
 <br>
 This is a step-by-step tutorial on how to install Xilinx Vivado 2020.2 for the above example
 
