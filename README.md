@@ -31,8 +31,17 @@ This is a simple program to show a cos signal being generated using a signal sou
 
 </details>
 <details>
-<summary>EXPERIMENT 2:  </summary>
+<summary>EXPERIMENT 2: Low Pass Filter </summary>
 <br>
+![image](https://github.com/user-attachments/assets/8f56cc16-7a2d-4c59-997d-012c2016b5fe)
+A low pas filter with a cutt off freq of 4500 and a Transition Width of 1000 is being used, so any frequency below 4500 will be passed and anything above will start to diminish, we can see this behaviour by looking at the time and frequency plot below.
+
+![image](https://github.com/user-attachments/assets/e108cd64-359d-4378-a0b4-705088f5f6c6)
+here we have no loss of signal, where the output of low pass is with a delay represented by the red signal as it undergoes a small delay due to the low pass signal.
+
+![image](https://github.com/user-attachments/assets/05736335-7fcd-4c94-a6bd-7a3e1d97ea37)
+
+here we have a  loss of the signal due to the freq being at 5000 which is above the low pass filter cut off frequency. Both the time and freq plot show a decline in the power level of the signal.
 
 </details>
 <details>
