@@ -91,5 +91,36 @@ On increasing the fft window size to 16384 we get more discrete lines in the fre
 
 </details>
 <details>
-<summary>EXPERIMENT 5:    </summary>
+<summary>EXPERIMENT 5: complex baseband Representation    </summary>
+<br>
+
+
+![image](https://github.com/user-attachments/assets/4ee6cac2-87aa-446d-ba44-a25d029bb55a)
+
+A baseband signal is a signal that is centered at the dc and passband is a signal that is centered at the carrier freq, This conversion can lead to the duplicate data being transmitted when the signal in the baseband is real signal. We can improve the spectrun usage by using a complex baseband technique where two real signals Ss(t) and Sc(t) are used to create S(t)= Sc(t) + jSs(t).
+
+This allows us to use the complete spectrum , we can also get this passband output by mathematical calculations and come to the result sp(t) = Sc(t)*cos(2*pi*fc*t) - Ss(t)*sin(2*pi*fc*t) , where the Sc(t) is the in-phase componenet and the Ss(t) is the quadrature or out of phase component.
+
+![image](https://github.com/user-attachments/assets/10e766d0-87a4-4263-9927-d27985db16ff)
+
+
+In GNU radio we can use 2 signal generators to produce two real signals , cos2pi*f0*t and sin2pi*f0*t and make sure f0<< to make them baseband signal approx, We can then use a conv to get the complex baseband representation, 
+
+
+![image](https://github.com/user-attachments/assets/3a43a801-982a-4f6a-b921-552e11a7a463)
+
+The blue signal represents the complex baseband representation of the two signals i.e cos and sin signals. We see that only signal is present at 1Khz as cos + jsin = e^2*pi*f0*t which has a fourier transform of having an impulse at f0. 
+
+![image](https://github.com/user-attachments/assets/9d2afa0c-5827-4984-83a7-ed3de9447071)
+
+after we get the complex baseband representation of the signal, we need to convert it into passband signal, for this we multiply with a carrier signal of 6Khz and at the end observe the signals at +7khz and -7khz as the carrier is at 6khz and we have the complex baseband signal at 1khz.
+
+![image](https://github.com/user-attachments/assets/17d0bcd2-9ce0-4d21-bfa6-15075b1a5866)
+
+
+This shows us the converstion of two baseband signals into a complex baseband represenation and then into a passband signal which makes a more efficent use of the available bandwidth.
+
+</details>
+<details>
+<summary>EXPERIMENT 6:     </summary>
 <br>
