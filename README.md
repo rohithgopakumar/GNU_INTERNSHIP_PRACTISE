@@ -1,4 +1,4 @@
-# GNU PRACTISE INTERNSHIP
+# GNU PRACTISE 
 
 
 ## Introduction
