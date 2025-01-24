@@ -46,7 +46,22 @@ here we have a  loss of the signal due to the freq being at 5000 which is above 
 
 </details>
 <details>
-<summary>EXPERIMENT 3:  </summary>
+<summary>EXPERIMENT 3: Vectors and Fourier transform of a sinc signal  </summary>
 <br>
+
+
+![image](https://github.com/user-attachments/assets/de584899-8753-4750-b239-1d10eec46b49)
+
+The fourier transform of a sinc(t) signal is a rectangular wave in the freq domain. By following the property of band limiting i.e if the signal is band limited in the freq domain it is infinite in the time domain and vice versa, as we know sinc is infinite in the time domain, we can create band limited signals in the freq domain. The above example of sinc(t) -0.5sinc(t-1) has been done in gnu radio.
+
+
+To do this we have to first decide on the sample limit i.e 1024 and by taking into the sample rate we can take time intervals from [-512/32,.....511/32] , a vector block is using with the numpy to find the values of the sinc at the different intervals.
+![image](https://github.com/user-attachments/assets/42689338-36c1-4ff1-95ac-aecc63dc26fb)
+
+
+![image](https://github.com/user-attachments/assets/0d0b368b-54e6-47bc-8609-0af289d026a3)
+
+
+Blue represents the original signal which is the A1*sinc(t) and the red shows the A2*sinc(t-1), and the resultant is shown by the green signal output ( sinc(t) -0.5sinc(t-1) ). as we can see no matter the linear combination of the sinc signals in the time domain, we have a band limited frequncy plot. We have the truncation of the sinc wave which causes the ripples in the freq domain.
 
 
