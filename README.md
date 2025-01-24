@@ -65,3 +65,7 @@ To do this we have to first decide on the sample limit i.e 1024 and by taking in
 Blue represents the original signal which is the A1*sinc(t) and the red shows the A2*sinc(t-1), and the resultant is shown by the green signal output ( sinc(t) -0.5sinc(t-1) ). as we can see no matter the linear combination of the sinc signals in the time domain, we have a band limited frequncy plot. We have the truncation of the sinc wave which causes the ripples in the freq domain.
 
 
+</details>
+<details>
+<summary>EXPERIMENT 4:   </summary>
+<br>
