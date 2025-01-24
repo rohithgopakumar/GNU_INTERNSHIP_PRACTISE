@@ -67,5 +67,29 @@ Blue represents the original signal which is the A1*sinc(t) and the red shows th
 
 </details>
 <details>
-<summary>EXPERIMENT 4:   </summary>
+<summary>EXPERIMENT 4: Windowing   </summary>
+<br>
+
+![image](https://github.com/user-attachments/assets/ade04482-ba07-41fb-a220-f48948099fde)
+
+When we operate using in the time domain its impossible to account for the infinite amount of the time and thus we go for windowing where an interval is taken into consideration instead of the whole time domain. In the above figure we can see that the freq lines at the two are not discrete , this is because we are multiplying with a rect window which in the freq domain is a sinc , We can get more discrete signals with increasing the window size.
+
+![image](https://github.com/user-attachments/assets/da4af8e5-a998-4316-9180-e80ad0f8571a)
+
+at f=1000hz, we observe discrete signals along with some noise and will continue to have discrete signals if it fulfils 
+
+f/f2 * Nfft = Int
+
+when f=1010 hz , we do not observe discrete lines untill we increase the window size as shown below:
+
+![image](https://github.com/user-attachments/assets/1a853008-4f80-45fc-8e02-4581b387d807)
+
+
+![image](https://github.com/user-attachments/assets/6a3286ee-8d72-492b-aa6a-f9017670f0ae)
+
+On increasing the fft window size to 16384 we get more discrete lines in the frequency plot. 
+
+</details>
+<details>
+<summary>EXPERIMENT 5:    </summary>
 <br>
