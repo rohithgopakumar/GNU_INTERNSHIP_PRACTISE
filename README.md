@@ -150,3 +150,11 @@ If we want to get back the baseband signal from this passband signal, we need to
 Output 2 and 4 are the passband output which we will use as reference to get the baseband output, output 1 and 3 can be observed to see that the signal i.e the sinc(t) and sinc^2(t) has been recovered successfully after conversion and we notice a small delay in the time domain as we use a low pass filter. 
 
 This concludes that we use Complex baseband signals to ensure maximum bandwidth usage and we can convert from baseband to passband and vise-versa by multiplying with a cos and sin respectively. We also need to remeber the root2 multiplication to the amplitude ignoring which we wiill get the converted signal with lesser amplitude.
+
+</details>
+
+# WEEK 2:
+
+<details>
+<summary>EXPERIMENT 1: Placeholder Experiment</summary>
+<br>
