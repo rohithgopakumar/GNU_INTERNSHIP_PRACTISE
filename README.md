@@ -154,7 +154,8 @@ This concludes that we use Complex baseband signals to ensure maximum bandwidth 
 </details>
 
 # WEEK 2:
-
+ 
+</details>
 <details>
 <summary>EXPERIMENT 1: Amplitude Shift Keying </summary>
 <br>
@@ -181,7 +182,7 @@ We do the passband coversion by multiplying with a cos signal of fc = 6000 Hz, a
 ![image](https://github.com/user-attachments/assets/98b46d16-c219-403e-a507-d5ca5336622c)
 The above is the demodulated signal and we can see that after low pass we are able to see the input waveform, as we are using only onw real signal we have no quadrature component in the output. We see a delay in the output due to the filter being a practical filter, there are also uneven due to the rectangle baseband signal not being band limited. 
  
-<details>
+</details>
 <details>
 <summary>EXPERIMENT 2: Phase Shift Keying </summary>
 <br>
