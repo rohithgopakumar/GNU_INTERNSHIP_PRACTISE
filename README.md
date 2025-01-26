@@ -156,5 +156,33 @@ This concludes that we use Complex baseband signals to ensure maximum bandwidth 
 # WEEK 2:
 
 <details>
-<summary>EXPERIMENT 1: Placeholder Experiment</summary>
+<summary>EXPERIMENT 1: Amplitude Shift Keying </summary>
 <br>
+![image](https://github.com/user-attachments/assets/ecbe6bcc-9e87-4bfb-bebf-018f3d095adc)
+
+
+We are doing Amplitude shift keying where the symbols can take the value from 0,1,2 or 3, For our example we consider a sample rate of 64000 and a symbol rate of 1000 symb/sec. As we have 64000 samples per second, we need to ensure that the symbols last 1ms each, 
+
+Samples per symbol = sample_rate // 1000 = 64
+
+so 64 samples are needed to represent one symbol in this case. we use the interpolation filter to do so with using a filter tap that fills in ones for the empty space in between. 
+
+
+![image](https://github.com/user-attachments/assets/23f0bec0-6bd7-41ed-8d2b-8e41b5c59beb)
+
+![image](https://github.com/user-attachments/assets/29752d6b-f74b-4656-b279-1b76b52a4e9e)
+
+We can see here the symbols taking the value from 0,1,2 or 3 and having 64 samples representing each of the symbols. This is the baseband representation of the signal and we need to convert to a passband representation using a carrier signal.
+
+![image](https://github.com/user-attachments/assets/dd2439da-49d4-41c3-b47f-4f1895ab5005)
+
+We do the passband coversion by multiplying with a cos signal of fc = 6000 Hz, after this we demodulate by multiplying with a cos and a -sin wave for the i and q compoennts respectively. 
+![image](https://github.com/user-attachments/assets/98b46d16-c219-403e-a507-d5ca5336622c)
+The above is the demodulated signal and we can see that after low pass we are able to see the input waveform, as we are using only onw real signal we have no quadrature component in the output. We see a delay in the output due to the filter being a practical filter, there are also uneven due to the rectangle baseband signal not being band limited. 
+ 
+
+<details>
+<summary>EXPERIMENT 2: Phase Shift Keying </summary>
+<br>
+
+
