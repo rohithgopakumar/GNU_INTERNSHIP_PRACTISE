@@ -188,3 +188,25 @@ The above is the demodulated signal and we can see that after low pass we are ab
 <br>
 
 
+![image](https://github.com/user-attachments/assets/58ef2e4c-284b-4a70-a6e8-4f0eb0262050)
+
+Here we do the PSK where the phase is changed with respect to the symbol, we choose N=4 here, which means the random bit is multiplied with e^j*2*pi*k/N where k=0,1,2,3..N-1 . the Chunks to Symbol mapper is used to assign a value anywhere from 0-4. 
+
+![image](https://github.com/user-attachments/assets/b3d7b76c-15fb-4a12-a8ad-df38c167da7c)
+
+The first image shows the passband signal after we multipy with e^2*pi*fc*t, and the second image shows us the baseband signal using a rectangular pulse, the third image is the constellation plot which shows that the signal can take a value of either 1,j,-1,-j from here. Now we have to try to recreate the original signal from the passband version.
+
+![image](https://github.com/user-attachments/assets/68f0a4d6-c7f8-41f7-8abc-b5e4560ac75f)
+To convert back to baseband we need to multipy by a cos and a -sin to get bck the In phase and quad phase components respectively, We then convert from real to complex to get back the original signal as unlike the previous case the original baseband signal has both real and imaginary componenets. 
+
+![image](https://github.com/user-attachments/assets/292fe7f9-57c7-4823-91d6-8c0cdfd6f983)
+
+this is the output of the recoverd signal, we can see that the output signal match both in the real and img once we align the input baseband with a small delay to compensate the offset by the lowpass signal, This shows a full baseband to passband and back to baseband conversion of a 4-PSK system.
+
+
+</details>
+<details>
+<summary>EXPERIMENT 3: Orthogonal Frequency Division Multiplexing </summary>
+<br>
+
+
